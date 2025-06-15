@@ -94,6 +94,7 @@ class AuthorImplTest {
 
     @Test
     void getHomePageName() {
+        // my change
         Resource resource=aemContext.currentResource("/resource/resourcePage");
         AuthorImpl authorImpl=aemContext.registerService(new AuthorImpl());
         authorImpl.resourcePage=resource;
